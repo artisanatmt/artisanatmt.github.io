@@ -4,25 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ARTISANAT M&T London Ltd</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+    header {
+      background: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 60px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    header img { height: 60px; }
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('background-logo.png') center/contain no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3em;
+      color: #003300;
+      background: rgba(255,255,255,0.8);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    section {
+      padding: 60px;
+      background: white;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    h2 { margin-bottom: 20px; color: #003300; }
+    footer {
+      background: #003300;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .contact a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body>
+  <header>
+    <img src="logo.png" alt="ARTISANAT M&T London Ltd">
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#services">SERVICES</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
 
-  <!-- Hero Section -->
-  <section class="text-center py-12 px-4">
-    <!-- Logo -->
-    <img src="artisanat.png" alt="ARTISANAT M&T Logo" class="mx-auto w-80 max-w-full mb-6" />
+  <div class="hero" id="home">
+    <h1>Crafting Trust from Frame to Finish</h1>
+  </div>
 
-    <!-- Slogan -->
-    <h1 class="text-3xl font-bold mb-4">Crafting Trust from Frame to Finish</h1>
-
-    <!-- Button -->
-    <a href="#contact">
-      <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded">
-        Get in Touch
-      </button>
-    </a>
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>
+      We provide premium carpentry and construction services tailored to your needs:
+    </p>
+    <ul>
+      <li>First fix carpentry — timber frames, internal walls, and roofing structures</li>
+      <li>Second fix carpentry — doors (including fire-rated), skirtings, architraves</li>
+      <li>Kitchen installations and bespoke cabinet construction</li>
+      <li>Built-in wardrobes, custom-made units and shelving</li>
+      <li>Decking, cladding, external wooden features</li>
+      <li>Loft conversions and home extensions</li>
+      <li>Timber flooring — laminate, engineered, solid, and LVT</li>
+      <li>Plastering, painting, and decorating</li>
+      <li>Full property renovation and refurbishment</li>
+    </ul>
   </section>
 
+  <section id="projects">
+    <h2>Projects</h2>
+    <p>
+      Explore our portfolio of completed works, showcasing craftsmanship, precision,
+      and a commitment to excellence in every detail. (Photos to be added)
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      ARTISANAT M&T London Ltd is a team of experienced professionals based in West London,
+      committed to delivering high-end carpentry and building solutions. We focus on detail,
+      durability, and aesthetic excellence in every project, ensuring a premium result that
+      stands the test of time.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="contact">
+      For enquiries, quotes or collaboration, reach out via:<br>
+      Email: <a href="mailto:info@artisanatmtlondon.co.uk">info@artisanatmtlondon.co.uk</a><br>
+      WhatsApp: <a href="https://wa.me/447733960306">Message us</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 ARTISANAT M&T London Ltd. All rights reserved.
+  </footer>
 </body>
 </html>
