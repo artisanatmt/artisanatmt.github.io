@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARTISANAT M&T London Ltd</title>
-  <meta name="description" content="High-quality carpentry, joinery, and construction services in London. ARTISANAT M&T London Ltd provides bespoke solutions with precision and trust." />
-  <meta name="keywords" content="carpentry, joinery, fire doors, construction, loft conversion, London builders, ARTISANAT M&T London" />
-  <meta name="author" content="ARTISANAT M&T London Ltd" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARTISANAT M&T London Ltd</title>
+    <meta name="description" content="High-quality carpentry, joinery, and construction services in London." />
+    <meta name="keywords" content="carpentry, joinery, fire doors, construction, loft conversion" />
+    <meta name="author" content="ARTISANAT M&T London Ltd" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
 
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-    }
+      body {
+        background-image: url('artisanat.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: sans-serif;
+      }
 
-    .background {
-      background-image: url('artisanat.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      background-color: #ffffff;
-      background-attachment: fixed;
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        color: white;
+        max-width: 90%;
+      }
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      .cta-button {
+        margin-top: 1rem;
+        background-color: #22c55e;
+        color: white;
+        padding: 0.5rem 1.5rem;
+        font-weight: bold;
+        border-radius: 0.375rem;
+        text-decoration: none;
+      }
 
-      min-height: 100vh;
-      padding: 2rem;
-      box-sizing: border-box;
-      text-align: center;
-    }
-  </style>
-</head>
-
-<body class="background text-white font-sans">
-  <div class="bg-black bg-opacity-60 p-6 rounded">
-    <h1 class="text-4xl font-bold mb-4">Crafting Trust from Frame to Finish</h1>
-    <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded">
-      Get in Touch
-    </a>
-  </div>
-</body>
+      .cta-button:hover {
+        background-color: #16a34a;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <h1>Crafting Trust from Frame to Finish</h1>
+      <a href="#contact" class="cta-button">Get in Touch</a>
+    </div>
+  </body>
 </html>
