@@ -8,6 +8,7 @@
     <meta name="keywords" content="carpentry, joinery, fire doors, construction, loft conversion" />
     <meta name="author" content="ARTISANAT M&T London Ltd" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       body, html {
         margin: 0;
@@ -15,33 +16,23 @@
         height: 100%;
         width: 100%;
       }
+
       .background {
         background-image: url('artisanat.png');
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: end;
-      }
-      .overlay {
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        padding: 2rem 1rem;
-        text-align: center;
+        background-attachment: fixed;
       }
     </style>
   </head>
-  <body>
-    <div class="background">
-      <div class="overlay text-white">
-        <h2 class="text-3xl font-bold mb-4">Crafting Trust from Frame to Finish</h2>
-        <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded">
-          Get in Touch
-        </a>
-      </div>
+
+  <body class="background text-white flex flex-col items-center justify-center min-h-screen text-center px-4">
+    <div class="bg-black bg-opacity-60 p-6 rounded">
+      <h1 class="text-4xl font-bold mb-4">Crafting Trust from Frame to Finish</h1>
+      <a href="#contact" class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded">
+        Get in Touch
+      </a>
     </div>
   </body>
 </html>
